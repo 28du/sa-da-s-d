@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玛仕金印刷 - 手账胶带/造景贴纸定制</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, "Microsoft YaHei", sans-serif; background: #fff; color: #333; line-height: 1.6; }
+        
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        
+        /* 顶部导航 */
+        .header { background: #1a1a2e; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        .header .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo-text { color: #fff; font-size: 22px; font-weight: bold; }
+        .logo-text span { color: #ffd700; }
+        .nav a { color: #ccc; text-decoration: none; margin-left: 25px; font-size: 14px; }
+        .nav a:hover { color: #ffd700; }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 80px 0 60px; text-align: center; }
+        .hero h1 { color: #fff; font-size: 42px; margin-bottom: 15px; }
+        .hero p { color: #ccc; font-size: 18px; max-width: 600px; margin: 0 auto 30px; }
+        .hero .btn { display: inline-block; background: #ffd700; color: #1a1a2e; padding: 14px 40px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 16px; }
+        .hero .btn:hover { background: #ffed4a; }
+        
+        /* 卖点 */
+        .features { padding: 60px 0; background: #f8f9fa; }
+        .features h2 { text-align: center; font-size: 28px; margin-bottom: 40px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .feature-card { background: #fff; border-radius: 10px; padding: 25px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .feature-card .icon { font-size: 36px; margin-bottom: 10px; }
+        .feature-card h3 { font-size: 16px; margin-bottom: 8px; }
+        .feature-card p { font-size: 13px; color: #666; }
+        
+        /* 产品 */
+        .products { padding: 60px 0; }
+        .products h2 { text-align: center; font-size: 28px; margin-bottom: 40px; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .product-card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; }
+        .product-card .img { height: 200px; background: #f0f0f5; display: flex; align-items: center; justify-content: center; color: #999; font-size: 14px; }
+        .product-card .info { padding: 20px; }
+        .product-card h3 { font-size: 16px; margin-bottom: 5px; }
+        .product-card p { font-size: 13px; color: #666; }
+        
+        /* 流程 */
+        .process { padding: 60px 0; background: #f8f9fa; }
+        .process h2 { text-align: center; font-size: 28px; margin-bottom: 40px; }
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
+        .step { text-align: center; padding: 20px; }
+        .step .num { width: 40px; height: 40px; background: #1a1a2e; color: #ffd700; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 10px; }
+        .step h3 { font-size: 15px; margin-bottom: 5px; }
+        .step p { font-size: 13px; color: #666; }
+        
+        /* 联系 */
+        .contact { padding: 60px 0; text-align: center; }
+        .contact h2 { font-size: 28px; margin-bottom: 20px; }
+        .contact p { color: #666; margin-bottom: 30px; }
+        .contact .btn { background: #1a1a2e; color: #fff; padding: 14px 40px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; }
+        .contact .btn:hover { background: #16213e; }
+        
+        /* 底部 */
+        .footer { background: #1a1a2e; color: #888; padding: 30px 0; text-align: center; font-size: 13px; }
+        .footer a { color: #ffd700; text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .nav a { margin-left: 12px; font-size: 12px; }
+            .hero h1 { font-size: 28px; }
+            .hero p { font-size: 15px; }
+            .hero { padding: 50px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo-text" style="display:flex; align-items:center; gap:10px;"><img src="玛仕金logo.jpg" style="height:32px; border-radius:50%;"> 玛仕金<span>印刷</span></div>
+            <div class="nav">
+                <a href="#features">优势</a>
+                <a href="#products">产品</a>
+                <a href="#process">流程</a>
+                <a href="#contact">联系</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <h1>手账胶带 · 造景贴纸<br>专业定制印刷</h1>
+            <p>进口数码印刷机 | 白墨充足不透底 | 色差小 | 小批量承接</p>
+            <a href="#contact" class="btn" style="background:#ffd700; color:#1a1a2e;">📩 免费寄样咨询</a>
+        </div>
+    </div>
+
+    <div class="features" id="features">
+        <div class="container">
+            <h2>为什么选择玛仕金</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🖨️</div>
+                    <h3>进口数码印刷机</h3>
+                    <p>CMYK+白墨一次成型，色彩还原度95%以上</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⬜</div>
+                    <h3>白墨充足不透底</h3>
+                    <p>白墨两层打底，深色背景上依然清晰显色</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎨</div>
+                    <h3>色差控制精准</h3>
+                    <p>专业调色师傅把关，出货前每批抽检</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🧸</div>
+                    <h3>材质软糯服帖</h3>
+                    <p>造景贴纸专用材质，曲面贴合不翘边</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📦</div>
+                    <h3>小批量可接</h3>
+                    <p>50张起订，试款无压力</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">✅</div>
+                    <h3>品质有保障</h3>
+                    <p>有色差问题直接重印，让你放心</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products" id="products">
+        <div class="container">
+            <h2>承接产品类型</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="img">📎 手账胶带</div>
+                    <div class="info">
+                        <h3>手账胶带</h3>
+                        <p>和纸/PET/bopp覆亮膜，白墨可选，模切加工。来图定制，一卷起印。</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img">🏞️ 造景贴纸</div>
+                    <div class="info">
+                        <h3>造景贴纸</h3>
+                        <p>软糯材质+白墨打底，场景卡/背卡定制，深色背景不透底。</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img">🏷️ 圆标/不干胶</div>
+                    <div class="info">
+                        <h3>圆标/不干胶</h3>
+                        <p>32mm-50mm多种尺寸，不干胶/和纸可选，模切+排废一步到位。</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img">📇 背卡/场景卡</div>
+                    <div class="info">
+                        <h3>背卡/场景卡</h3>
+                        <p>造景场景卡、产品背卡印刷，多种纸张厚度可选，覆膜工艺。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="process" id="process">
+        <div class="container">
+            <h2>合作流程</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="num">1</div>
+                    <h3>来图咨询</h3>
+                    <p>提供设计稿，客服一对一沟通需求</p>
+                </div>
+                <div class="step">
+                    <div class="num">2</div>
+                    <h3>免费寄样</h3>
+                    <p>寄送材质样卡，确认材质和效果</p>
+                </div>
+                <div class="step">
+                    <div class="num">3</div>
+                    <h3>报价下单</h3>
+                    <p>按规格报价，确认后安排生产</p>
+                </div>
+                <div class="step">
+                    <div class="num">4</div>
+                    <h3>打样确认</h3>
+                    <p>数码打样，确认无误后批量生产</p>
+                </div>
+                <div class="step">
+                    <div class="num">5</div>
+                    <h3>出货交付</h3>
+                    <p>质量检验，包装发货</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <p>来图即可报价，免费寄样<br>小批量同样欢迎</p>
+            <p style="font-size:22px; color:#1a1a2e; margin-top:20px; font-weight:bold;">📱 微信号：HTing398</p>
+            <p style="color:#999; font-size:14px; margin-top:6px;">添加微信直接沟通，回复更快</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>© 2026 东莞市玛仕金科技有限公司 ｜ 文创印刷专业定制</p>
+            <p style="margin-top:5px;">手账胶带 · 造景贴纸 · 圆标不干胶 · 背卡场景卡</p>
+        </div>
+    </div>
+</body>
+</html>
